@@ -1,0 +1,77 @@
+/* src/components/ExperienceCard.css */
+
+.experience-card {
+  background-color: #1e1e1e; /* Dark background for individual card */
+  color: #e0e0e0; /* Light text color */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.experience-card:hover {
+  background-color: #333333; /* Slightly lighter background on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.experience-card h3 {
+  margin: 0;
+  color: #ff9800; /* Highlighted color for job titles */
+  font-size: 1.2rem; /* Adjusted font size for better visibility */
+}
+
+.experience-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem; /* Adjusted font size for better readability */
+}
+
+.experience-card .company-name {
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjusted font size for company name */
+}
+
+.experience-card .duration {
+  color: #bbb; /* Lighter color for duration text */
+  font-size: 0.9rem; /* Slightly smaller font size for duration */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 1rem;
+    max-width: 100%; /* Ensure card width fits screen */
+  }
+
+  .experience-card h3 {
+    font-size: 1rem; /* Adjusted font size for better readability on small screens */
+  }
+
+  .experience-card .company-name {
+    font-size: 1rem; /* Adjusted font size for company name */
+  }
+
+  .experience-card .duration {
+    font-size: 0.8rem; /* Slightly smaller font size for duration */
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    padding: 0.8rem;
+  }
+
+  .experience-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .experience-card .company-name {
+    font-size: 0.9rem;
+  }
+
+  .experience-card .duration {
+    font-size: 0.7rem;
+  }
+}

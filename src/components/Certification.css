@@ -1,0 +1,20 @@
+/* src/pages/CertificationPage.css */
+
+.certification-page {
+    padding: 20px;
+    background: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+    min-height: 100vh; /* Ensure the page takes full viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .certification-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1; /* Allow this section to expand and fill available space */
+  }
+  

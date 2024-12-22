@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Python for Datascience",
+      "organization": "NPTEL",
+      "issueDate": "June 2023",
+      "link": "#"
+    },
+    {
+      "name": "Javascript for Web development",
+      "organization": "30daysCoding",
+      "issueDate": "May 2024",
+      "link": "#"
+    },
+    {
+        "name": "Python for Datascience",
+        "organization": "Simplilearn",
+        "issueDate": "Aug 2024",
+        "link": "https://certificates.simplicdn.net/share/7166325.pdf"
+    },
+    {
+      "name": "Python for Datascience",
+      "organization": "IBM",
+      "issueDate": "Sept 2024",
+      "link": "https://courses.skillsnet.simplilearn.com/certificates/9b714ba282a14c7d9df2794a7f681867#"
+    },
+    {
+        "name": "Data Scientist",
+        "organization": "IBM and Simplilearn",
+        "issueDate": "Coming soon...",
+        "link": "#"
+    },
+    {
+        "name": "SQL certification",
+        "organization": "Simplilearn",
+        "issueDate": "Aug 2024",
+        "link": "https://certificates.simplicdn.net/share/7209933.pdf"
+    },
+    {
+        "name": "Foundations: Programming Refresher",
+        "organization": "Simplilearn",
+        "issueDate": "Aug 2024",
+        "link": "https://certificates.simplicdn.net/share/7208433.pdf"
+    }
+  ]

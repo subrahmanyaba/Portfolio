@@ -1,0 +1,51 @@
+/* src/components/CertificationCard.css */
+
+.certification-card {
+  background: #1e1e1e; /* Dark background for the card */
+  color: #e0e0e0; /* Light text color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  max-width: 300px; /* Limit card width */
+  text-align: center; /* Center align text */
+}
+
+.certification-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.certification-card h3 {
+  margin: 0;
+  font-size: 1.4em; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #00aaff; /* Highlighted color */
+  text-transform: uppercase; /* Uppercase text */
+  border-bottom: 2px solid #00aaff; /* Bottom border for emphasis */
+  padding-bottom: 10px; /* Padding below the title */
+}
+
+.certification-card p {
+  margin: 10px 0;
+  font-size: 0.9em; /* Smaller font size */
+  color: #e0e0e0; /* Light text color for paragraphs */
+}
+
+.certification-card a {
+  color: #00aaff; /* Highlight link color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+}
+
+.certification-card a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional styles for disabled links */
+.certification-card a.disabled {
+  color: #666; /* Gray color for disabled link */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+  pointer-events: none; /* Prevent clicking */
+  text-decoration: none; /* Remove underline for disabled state */
+}

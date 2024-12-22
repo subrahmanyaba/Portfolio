@@ -1,0 +1,22 @@
+[
+    {
+        "companyName":"Tata Technologies Ltd.",
+        "duration":"Jan 2023 - Present",
+        "job":"GRADUATE ENGINEER TRAINEE (Django Developer and Database Engineer)",
+        "desc": [
+      "Developed and optimized RESTful APIs using Django,ensuring scalability and security",
+      "Automated tasks with cron jobs on AWS S3, improving resource management.",
+      "Enhanced database performance with designing stored procedures and views.",
+      "Automated business emails and reports, reducing manual effort.",
+      "Managed CTL processes for timely data integration."
+    ]
+
+    },
+    {
+        "companyName":"GAS Turbine research establishment (DRDO)",
+        "duration":"Jan 2022 - Feb 2022",
+        "job":"INTERN",
+        "desc": ["Learning based internship titled “Software Applications Under Labview”, '. NI LAB VIEW is powerful tool used in various engineering fields, including rocket building, due to its robust capabilities in data acquisition, instrument control, and automation."]
+
+    }
+]

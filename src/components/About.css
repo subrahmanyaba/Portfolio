@@ -1,0 +1,121 @@
+/* src/components/About.css */
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #282c34;
+}
+
+.about-me-content {
+  display: flex;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-me-text {
+  padding: 30px;
+  flex: 1;
+}
+
+.about-me-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #f5f5f5;
+}
+
+.about-me-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-weight: 300;
+}
+
+.skills-section, .hobbies-section, .contact-section {
+  margin-bottom: 20px;
+}
+
+.skills-section h2, .hobbies-section h2, .contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f5f5f5;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.skills-section ul, .hobbies-section ul, .contact-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.skills-section ul li, .hobbies-section ul li, .contact-section ul li {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.about-me-image {
+  flex: 0.5;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-me-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-section ul li {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.contact-section a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .about-me-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-text {
+    flex: 1;
+  }
+}

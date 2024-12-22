@@ -1,0 +1,30 @@
+/* src/pages/ProjectsPage.css */
+
+.projects-page {
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  margin-top: 60px; /* Adjust to match navbar height */
+}
+
+.projects-page h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  /* Other styles for content */
+}

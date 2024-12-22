@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* Ensure there’s no global margin or padding causing extra space */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
