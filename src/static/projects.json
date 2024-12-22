@@ -18,10 +18,10 @@
     "projectLink": "https://colab.research.google.com/drive/1ZRGxZ7xN3OX9xAUhJPXI8ROWhXIKg_3G?usp=sharing"
   },
   {
-    "title": "Pedro Cart: Your Ultimate Destination for Gaming Equipment",
+    "title": "Keyboard zone: Your Ultimate Destination for keyboards",
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZGchMBxd7hwcBbgP3YV3Hq7mW_vOk_8vGA&s",
-    "description": "Pedro Cart is a robust e-commerce website built with Django, designed to provide gamers with a wide selection of gaming equipment. The platform features a responsive design, an intuitive user interface, and a comprehensive product catalog, ensuring an optimal shopping experience for gaming enthusiasts.",
-    "projectLink": "Coming Soon"
+    "description": "Discover a world of premium keyboards tailored to every enthusiast and professional. From sleek mechanical keyboards with customizable RGB lighting to ergonomic designs for comfortable typing, we offer an extensive range for gamers, developers, writers, and collectors.",
+    "projectLink": "https://github.com/subrahmanyaba/KeyboardZone"
   },
   {
     "title": "CabCue",
