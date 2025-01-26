@@ -17,15 +17,17 @@ const CertificationPage = () => {
     <div className="certification-page">
       <h2>Certifications</h2>
       <div className="certification-grid">
-        {certifications.map((cert, index) => (
-          <CertificationCard
-            key={index}
-            name={cert.name}
-            organization={cert.organization}
-            issueDate={cert.issueDate}
-            link={cert.link}
-          />
-        ))}
+      {certifications
+  .sort((a, b) => new Date(b.issueDate) - new Date(a.issueDate)) // Sort by issueDate in descending order
+  .map((cert, index) => (
+    <CertificationCard
+      key={index}
+      name={cert.name}
+      organization={cert.organization}
+      issueDate={cert.issueDate}
+      link={cert.link}
+    />
+  ))}
       </div>
     </div>
   );
