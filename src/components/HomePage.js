@@ -1,3 +1,4 @@
+// src/components/HomePage.js
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
@@ -36,7 +37,7 @@ const HomePage = () => {
   const scrollToSections = () => {
     if (sectionsRef.current) {
       const targetPosition = sectionsRef.current.getBoundingClientRect().top + window.pageYOffset;
-      smoothScroll(targetPosition, 1000); // 1000ms = 1 second
+      smoothScroll(targetPosition, 1000);
     }
   };
 
@@ -59,18 +60,14 @@ const HomePage = () => {
 
     const observer = new IntersectionObserver(handleIntersection, observerOptions);
 
-    if (aboutRef.current) observer.observe(aboutRef.current);
-    if (projectsRef.current) observer.observe(projectsRef.current);
-    if (certificationsRef.current) observer.observe(certificationsRef.current);
-    if (experienceRef.current) observer.observe(experienceRef.current);
-    if (skillsRef.current) observer.observe(skillsRef.current);
+    [aboutRef, projectsRef, certificationsRef, experienceRef, skillsRef].forEach(ref => {
+      if (ref.current) observer.observe(ref.current);
+    });
 
     return () => {
-      if (aboutRef.current) observer.unobserve(aboutRef.current);
-      if (projectsRef.current) observer.unobserve(projectsRef.current);
-      if (certificationsRef.current) observer.unobserve(certificationsRef.current);
-      if (experienceRef.current) observer.unobserve(experienceRef.current);
-      if (skillsRef.current) observer.unobserve(skillsRef.current);
+      [aboutRef, projectsRef, certificationsRef, experienceRef, skillsRef].forEach(ref => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
     };
   }, []);
 
@@ -97,7 +94,6 @@ const HomePage = () => {
               <ul>
                 <li>JavaScript</li>
                 <li>ReactJS</li>
-                <li>Python</li>
               </ul>
             </div>
             <div className="skills-category">
@@ -107,6 +103,7 @@ const HomePage = () => {
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>Flask</li>
+                <li>FastAPI</li>
               </ul>
             </div>
             <div className="skills-category">
@@ -115,12 +112,25 @@ const HomePage = () => {
                 <li>Python</li>
                 <li>TensorFlow</li>
                 <li>CNN, LSTM</li>
-                <li>Neural Network Architecting</li>
                 <li>Machine Learning</li>
                 <li>Deep Learning</li>
                 <li>Pandas</li>
                 <li>NumPy</li>
                 <li>Computer Vision</li>
+              </ul>
+            </div>
+            <div className="skills-category">
+              <h3>DevOps</h3>
+              <ul>
+                <li>AWS</li>
+                <li>RabbitMQ</li>
+                <li>AWS Cloudfront</li>
+                <li>AWS Lambda</li>
+                <li>AWS API Gateway</li>
+                <li>AWS EC2</li>
+                <li>AWS CloudWatch</li>
+                <li>AWS S3</li>
+                <li>Jenkins</li>
               </ul>
             </div>
             <div className="skills-category">
